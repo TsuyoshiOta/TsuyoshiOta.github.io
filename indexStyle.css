@@ -10,7 +10,7 @@ body {
 	margin: 0px;
 	padding: 0px;
 	text-align: center;
-	background-image: url(images/bg.gif);	/*斜線の壁紙設定*/
+	background-image: url(./bg_image.jpg);	/*斜線の壁紙設定*/
 	background-repeat: repeat-x;
 	background-position: top;
 	
@@ -77,9 +77,10 @@ a:hover {
 /*ヘッダー（サイト名ロゴが入っているボックス）
 ---------------------------------------------------------------------------*/
 #header {
-	height: 72px;	/*ヘッダーの高さ*/	
+	height: 20px;	/*ヘッダーの高さ*/	
 	width: 100%;
 	position: relative;
+    background-color: #ffffff;
 }
 
 #header h1 {
@@ -121,12 +122,13 @@ ul#menu li a {
 	width: 498px;	/*メニュー１個あたりの幅*/
 	text-decoration: none;
 	text-align: center;
-	font-size: 16px;	/*文字サイズ*/
+	font-size: 25px;	/*文字サイズ*/
+    background-color: #dcdcdc;
 }
 
 ul#menu a:hover {
 	background-color: #3b5998;	/*カーソルオーバー時の背景色（白）*/
-	color: #FFFFFF;
+	color: #ffffff;
 }
 
 
@@ -153,8 +155,8 @@ ul#menu a:hover {
 
 #main h2 {
 	font-size: 100%;
-	border-bottom: 4px solid #F93D69;	/*h2タグの下線*/
-	color: #F93D69;	/*h2タグの文字色*/
+	border-bottom: 4px solid #32cd32;	/*h2タグの下線*/
+	color: #32cd32;	/*h2タグの文字色*/
 }
 
 #main h3 {
@@ -317,12 +319,5 @@ ul#menu a:hover {
 
 .pagetop {
 	text-align: right;
+    background-color: #ffffff;
 }
-
-/* ダウニー写真
-.tp {
-  position: absolute; /* 絶対位置で指定(親ボックス基準) */ 
-  top: 200px;         /* 上から100px */ 
-  left: 50px; 
-}
- */
