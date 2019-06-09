@@ -1,0 +1,331 @@
+@charset "shift_jis";
+
+
+body {
+	font-family: "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";
+	font-size: 75%;
+	line-height: 2;
+	color: #333333;	/*全体の文字色*/
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	background-image: url(images/bg.gif);	/*斜線の壁紙設定*/
+	background-repeat: repeat-x;
+	background-position: top;
+	
+}
+
+body#top {
+	background-image: url(images/bgtop.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+
+h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form{
+	margin: 0px;
+	padding: 0px;
+}
+
+ul{
+	list-style-type: none;
+}
+
+img {
+	border: none;
+}
+
+input,textarea,select {
+	font-size: 1em;
+}
+
+form {
+	margin: 0px;
+}
+
+table {
+	border-collapse:collapse;
+	font-size: 100%;
+	border-spacing: 0;
+}
+
+
+
+/*リンク設定
+---------------------------------------------------------------------------*/
+a {
+	color: #333333;
+}
+
+a:hover {
+	color: #F93D69;	/*カーソルオーバー時の文字色*/
+}
+
+
+
+/*コンテナー
+---------------------------------------------------------------------------*/
+#container {
+	text-align: left;
+	width: 1000px;	/*HPの幅*/
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+/*ヘッダー（サイト名ロゴが入っているボックス）
+---------------------------------------------------------------------------*/
+#header {
+	height: 20px;	/*ヘッダーの高さ*/	
+	width: 100%;
+	position: relative;
+    background-color: #ffffff;
+}
+
+#header h1 {
+	font-size: 11px;	/*h1タグの文字サイズ*/
+	font-weight: normal;		/*文字色*/
+	position: absolute;
+	left: 10px;		/*ヘッダーに対して左から10pxの位置に配置*/
+	line-height: 20px;
+}
+
+#header #logo {
+	position: absolute;
+	left: 0px;	/*ヘッダーに対してサイト名ロゴを左から0pxの位置に配置*/
+	top: 3px;	/*ヘッダーに対してサイト名ロゴを上から3pxの位置に配置*/
+}
+
+
+
+/*メインメニュー
+---------------------------------------------------------------------------*/
+ul#menu {
+	padding-left: 1px;
+}
+
+ul#menu li {
+	line-height: 70px;
+	height: 70px;
+	float: left;
+	border-left: 1px solid #A7A7A7;	/*メニュー間の境界線。左側に１本。*/
+}
+
+ul#menu li.last {
+	border-right:1px solid #A7A7A7;	/*最後のメニュー用の右側の１本線。*/
+}
+
+ul#menu li a {
+	display: block;
+	height: 70px;
+	width: 498px;	/*メニュー１個あたりの幅*/
+	text-decoration: none;
+	text-align: center;
+	font-size: 20px;	/*文字サイズ*/
+    background-color: #dcdcdc;
+}
+
+ul#menu a:hover {
+	background-color: #3b5998;	/*カーソルオーバー時の背景色（白）*/
+	color: #ffffff;
+}
+
+
+
+/*コンテンツ（左右ブロックを囲むボックス）
+---------------------------------------------------------------------------*/
+#contents {
+	clear: left;
+	width: 100%;
+}
+
+
+
+/*メインコンテンツ（左ブロック）
+---------------------------------------------------------------------------*/
+#main {
+	width: 900px;	/*幅*/
+	float: left;	/*左よせ*/
+	padding-top: 20px;
+	display: inline;
+	margin-left: 2px;
+	padding-bottom: 50px;
+}
+
+#main h2 {
+	font-size: 100%;
+	border-bottom: 4px solid #32cd32;	/*h2タグの下線*/
+	color: #32cd32;	/*h2タグの文字色*/
+}
+
+#main h3 {
+	font-size: 100%;
+	border-bottom: 4px solid #333333;	/*h3タグの下線*/
+	color: #333333;	/*h3タグの文字色*/
+}
+
+#main p {
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+}
+
+#main h22 {
+	font-size: 100%;
+	border-bottom: 4px solid #000000;	/*h2タグの下線*/
+	color: #000000;	/*h2タグの文字色*/
+}
+
+
+/*サイドコンテンツ（右ブロック）
+---------------------------------------------------------------------------*/
+#side {
+	width: 380px;	/*幅*/
+	float: right;	/*右よせ*/
+	padding-top: 20px;
+	display: inline;
+	margin-right: 1px;
+	padding-bottom: 50px;
+}
+
+#side h3 {
+	font-size: 100%;
+	color: #FFFFFF;	/*h3タグ（SIDE MENUとか入っている所）の文字色*/
+	background-color: #3b5998;	/*背景色*/
+	text-align: center;	/*文字をセンタリング*/
+	margin-bottom: 5px;	/*下に少し余白*/
+}
+
+#side p {
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+}
+
+/*サイドメニュー（SIDE MENU）*/
+#side ul.sidemenu a {
+	display: block;
+	text-decoration: none;
+	width: 253px;
+	padding-left: 10px;
+	border-top: 1px solid #c9c9c9;		/*メニューの上の線*/
+	border-right: 1px solid #c9c9c9;	/*メニューの右側の線*/
+	border-bottom: 1px solid #c9c9c9;	/*メニューの下の線*/
+	border-left: 4px solid #E994A8;
+}
+
+#side ul.sidemenu li {
+	margin-bottom: 5px;	/*メニュー同士の余白*/
+}
+
+#side ul.sidemenu a:hover {
+	background-color: #f5f5f5;	/*カーソルオーバー時の背景色*/
+}
+
+
+
+/*フッター（コピーライトなどが入っている最下部のボックス）
+---------------------------------------------------------------------------*/
+#footer {
+	clear: both;
+	width: 100%;
+	text-align: center;		/*文字色*/
+	background-color: #cdcdcd;	/*背景色*/
+	color: #333333;
+}
+#footer a {
+	color: #333333;
+}
+
+
+
+/*トップページのWhat's New欄
+---------------------------------------------------------------------------*/
+#main dl.new {
+	height: 100px;		/*高さ*/
+	overflow: auto;		/*この設定でiframeっぽく見える*/
+}
+
+#main dl.new dt {
+	font-weight: bold;	/*日付を太字に。通常がいいならこの1行削除。*/
+	float: left;		/*日付を左よせに。*/
+}
+
+#main dl.new dd {
+	border-bottom: 1px solid #999999;	/*情報ごとに入る下線*/
+	padding-left: 8em;	/*日付を左よせしている分の余白*/
+}
+
+
+
+/*テーブル
+---------------------------------------------------------------------------*/
+.ta1 {
+	width: 688px;
+}
+
+.ta1, .ta1 td, .ta1 th{
+	border: 1px solid #999999;
+}
+
+.ta1 td, .ta1 th{
+	padding: 10px;	/*テーブル内の余白*/
+}
+
+.ta1 th{
+	background-color: #fafafa;	/*左側thタグの背景色*/
+	width: 80px;	/*左側thタグの幅*/
+	text-align: center;	/*センタリング*/
+}
+
+.ta1 th.tamidashi{
+	width: auto;
+	text-align: left;
+	background-color: #e994a8;	/*テーブルの色が付いた見出し部分の背景色*/
+	color: #FFFFFF;	/*文字色*/
+}
+
+
+
+/*左右のブロック内にある各ボックス（グレーの枠線が入った白い箱）
+---------------------------------------------------------------------------*/
+.box {
+	background-color: #FFFFFF;	/*ボックスの背景色（白）*/
+	border: 1px solid #c9c9c9;	/*ボックスの枠線*/
+	margin-bottom: 1em;			/*ボックスの下に空間を空ける設定*/
+	padding: 5px;				/*ボックス内の余白*/
+    width="1000px";
+}
+
+.box2 {
+	background-color: #FFFFFF;	/*ボックスの背景色（白）*/
+	border: 1px solid #000000;	/*ボックスの枠線*/
+	margin-bottom: 1em;			/*ボックスの下に空間を空ける設定*/
+	padding: 5px;				/*ボックス内の余白*/
+}
+
+
+/*細々
+---------------------------------------------------------------------------*/
+.color1 {
+	color: #0093a9;
+}
+
+.look {
+	background-color: #ebebeb;
+}
+
+.mb1em {
+	margin-bottom: 1em;
+}
+
+.pagetop {
+	text-align: right;
+}
+
+/* ダウニー写真
+.tp {
+  position: absolute; /* 絶対位置で指定(親ボックス基準) */ 
+  top: 200px;         /* 上から100px */ 
+  left: 50px; 
+}
+ */
